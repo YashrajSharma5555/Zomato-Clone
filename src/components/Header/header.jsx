@@ -1,8 +1,13 @@
 import React from "react";
 import "./header.css";
+import {Link} from "react-router-dom"
+
+
 const header = () => {
   return (
+    
     <header>
+
       <nav>
         <div className="getapp">Get the App</div>
         <div className="list">
@@ -14,10 +19,10 @@ const header = () => {
               <a href="/">Add restaurant</a>
             </li>
             <li>
-              <a href="/">Log in</a>
+              <Link to="/login">Log in</Link>
             </li>
             <li>
-              <a href="/">Sign up</a>
+              <Link to= "/signup">Sign up</Link>
             </li>
           </ul>
         </div>
@@ -37,7 +42,13 @@ const header = () => {
         </div>
       </div>
     </header>
+
   );
 };
 
 export default header;
+
+
+
+
+

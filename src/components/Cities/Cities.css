@@ -1,0 +1,79 @@
+.cities{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    gap: 50px;
+    max-width: 100%;
+
+}
+.cities h1{
+    width: 80vw;
+    padding: 0;
+    margin: 0;
+}
+
+.city{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 350px;
+    min-width: 200px;
+    padding:10px 10px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: white;
+}
+
+.cityContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-rows: auto ;
+    grid-gap: 20px;
+    max-width: 80vw;
+    padding: 0;
+    margin: 0;
+}
+@media screen and (max-width: 1000px){
+    .cityContainer{
+
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media screen and (max-width: 600px){
+    .cityContainer{
+
+        grid-template-columns: 1fr;
+    }
+}
+.cityLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+
+}
+
+.cityLeft h3{
+    letter-spacing: 0.05rem;
+    font-size: 20px;
+    font-weight: normal;
+    padding: 0;
+    margin: 0;
+}
+
+
+.cityLeft span{
+    padding: 0;
+}
+
+#seeMore{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
